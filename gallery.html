@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery - KS Saivam Delights</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* BODY */
+
+body{
+background:#f5f5dc;
+}
+
+/* HEADER */
+
+header{
+background:#2e7d32;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#ffd54f;
+}
+
+/* TITLE */
+
+.gallery-title{
+text-align:center;
+margin-top:40px;
+font-size:36px;
+color:#2e7d32;
+letter-spacing:1px;
+
+animation:slideDown 1s ease;
+}
+
+/* GRID */
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:50px;
+}
+
+/* CARD */
+
+.gallery-card{
+overflow:hidden;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+background:white;
+
+animation:fadeUp 1s ease;
+transition:0.4s;
+}
+
+.gallery-card:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+
+/* IMAGE */
+
+.gallery-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:0.4s;
+}
+
+.gallery-card:hover img{
+transform:scale(1.1);
+}
+
+/* FOOD NAME */
+
+.food-name{
+text-align:center;
+padding:12px;
+font-weight:bold;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeUp{
+
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes slideDown{
+
+0%{
+opacity:0;
+transform:translateY(-40px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">KS SAIVAM DELIGHTS</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="gallery.html">Gallery</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<h1 class="gallery-title">Our Food Gallery</h1>
+
+<div class="gallery-grid">
+
+<div class="gallery-card">
+<img src="images/idli.png">
+<div class="food-name">Soft Idli</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/dosa.png">
+<div class="food-name">Masala Dosa</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/paneer.png">
+<div class="food-name">Paneer Butter Masala</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/meals.png">
+<div class="food-name">South Indian Meals</div>
+</div>
+
+<div class="gallery-card">
+<img src="images/tiffin.png">
+<div class="food-name">Mini Tiffin</div>
+</div>
+
+</div>
+
+</body>
+</html>

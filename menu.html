@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Menu - KS Saivam Delights</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f5f5dc;
+}
+
+/* Header */
+
+header{
+background:#2e7d32;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 12px;
+font-weight:bold;
+}
+
+/* Menu Section */
+
+.menu{
+padding:40px;
+text-align:center;
+}
+
+.menu h1{
+font-size:36px;
+color:#2e7d32;
+margin-bottom:30px;
+letter-spacing:1px;
+}
+
+/* Grid */
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+padding:20px;
+}
+
+/* Card */
+
+.menu-card{
+background:white;
+border-radius:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+transition:0.4s;
+}
+
+.menu-card:hover{
+transform:scale(1.05);
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Image */
+
+.menu-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+background:white;
+padding:10px;
+transition:0.4s;
+}
+
+/* Title */
+
+.menu-card h3{
+margin:10px;
+}
+
+/* Price */
+
+.price{
+color:#2e7d32;
+font-weight:bold;
+font-size:18px;
+margin-bottom:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">KS SAIVAM DELIGHTS</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="#">Gallery</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="menu">
+
+<h1>Our Delicious Menu</h1>
+
+<div class="menu-grid">
+
+
+<div class="menu-card">
+<img src="images/idli.png">
+<h3>Idli</h3>
+<p class="price">₹40</p>
+</div>
+
+
+<div class="menu-card">
+<img src="images/dosa.png">
+<h3>Masala Dosa</h3>
+<p class="price">₹60</p>
+</div>
+
+
+<div class="menu-card">
+<img src="images/paneer.png">
+<h3>Paneer Butter Masala</h3>
+<p class="price">₹180</p>
+</div>
+
+
+<div class="menu-card">
+<img src="images/meals.png">
+<h3>South Indian Meals</h3>
+<p class="price">₹120</p>
+</div>
+
+
+<div class="menu-card">
+<img src="images/tiffin.png">
+<h3>Mini Tiffin</h3>
+<p class="price">₹100</p>
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
